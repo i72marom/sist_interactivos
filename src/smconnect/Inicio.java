@@ -39,6 +39,7 @@ public class Inicio extends javax.swing.JFrame {
 
         jLabel2.setIcon(new javax.swing.ImageIcon("/mnt/datos/informatica/interfaces/practicas/smconnect/src/media/smconnect-logo.png")); // NOI18N
 
+        jLabel1.setFont(new java.awt.Font("Noto Sans CJK KR Light", 1, 12)); // NOI18N
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         java.util.ResourceBundle bundle = java.util.ResourceBundle.getBundle("idiomas/Bundle_es_ES"); // NOI18N
         jLabel1.setText(bundle.getString("Bienvenida")); // NOI18N
