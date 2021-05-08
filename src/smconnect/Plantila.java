@@ -19,6 +19,7 @@ public class Plantila extends javax.swing.JFrame {
      */
     public Plantila() {
         initComponents();
+        TextPrompt texto = new TextPrompt("Escriba su tweet...", jTextArea1);
         
     }
 
@@ -46,7 +47,7 @@ public class Plantila extends javax.swing.JFrame {
         jLabel9 = new javax.swing.JLabel();
         jPanel8 = new javax.swing.JPanel();
         jLabel10 = new javax.swing.JLabel();
-        field_pw_login = new javax.swing.JPasswordField();
+        field_password_login = new javax.swing.JPasswordField();
         jPanel10 = new javax.swing.JPanel();
         jLabel11 = new javax.swing.JLabel();
         jPanel9 = new javax.swing.JPanel();
@@ -61,10 +62,10 @@ public class Plantila extends javax.swing.JFrame {
         jPanel3 = new javax.swing.JPanel();
         jPanel4 = new javax.swing.JPanel();
         jLabel4 = new javax.swing.JLabel();
-        field_username = new javax.swing.JTextField();
-        field_email = new javax.swing.JTextField();
-        field_password = new javax.swing.JPasswordField();
-        jPanel5 = new javax.swing.JPanel();
+        field_username_registro = new javax.swing.JTextField();
+        field_email_registro = new javax.swing.JTextField();
+        field_password_registro = new javax.swing.JPasswordField();
+        boton_registrarse = new javax.swing.JPanel();
         jLabel8 = new javax.swing.JLabel();
         jLabel14 = new javax.swing.JLabel();
         titulo_registro = new javax.swing.JLabel();
@@ -118,12 +119,72 @@ public class Plantila extends javax.swing.JFrame {
         jLabel34 = new javax.swing.JLabel();
         opcion_mis_tweets = new javax.swing.JPanel();
         jLabel35 = new javax.swing.JLabel();
-        jPanel18 = new javax.swing.JPanel();
+        opcion_estadisticas = new javax.swing.JPanel();
         jLabel42 = new javax.swing.JLabel();
         cardLayout_gestionar = new javax.swing.JPanel();
         panel_crear_tweet = new javax.swing.JPanel();
+        jPanel1 = new javax.swing.JPanel();
+        jLabel15 = new javax.swing.JLabel();
+        jLabel43 = new javax.swing.JLabel();
+        jSeparator5 = new javax.swing.JSeparator();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jTextArea1 = new javax.swing.JTextArea();
+        numCaracteresTweet = new javax.swing.JLabel();
+        boton_tweetear = new javax.swing.JPanel();
+        jLabel44 = new javax.swing.JLabel();
+        jLabel45 = new javax.swing.JLabel();
+        jLabel46 = new javax.swing.JLabel();
         panel_mis_tweets = new javax.swing.JPanel();
+        tweet_1 = new javax.swing.JPanel();
+        jLabel53 = new javax.swing.JLabel();
+        jLabel54 = new javax.swing.JLabel();
+        jLabel55 = new javax.swing.JLabel();
+        jSeparator6 = new javax.swing.JSeparator();
+        jLabel62 = new javax.swing.JLabel();
+        jSeparator7 = new javax.swing.JSeparator();
+        tweet_2 = new javax.swing.JPanel();
+        jLabel56 = new javax.swing.JLabel();
+        jLabel57 = new javax.swing.JLabel();
+        jLabel58 = new javax.swing.JLabel();
+        jSeparator8 = new javax.swing.JSeparator();
+        jLabel52 = new javax.swing.JLabel();
+        jSeparator9 = new javax.swing.JSeparator();
+        jSeparator10 = new javax.swing.JSeparator();
+        tweet_3 = new javax.swing.JPanel();
+        jLabel59 = new javax.swing.JLabel();
+        jLabel60 = new javax.swing.JLabel();
+        jLabel61 = new javax.swing.JLabel();
+        jSeparator11 = new javax.swing.JSeparator();
+        jLabel51 = new javax.swing.JLabel();
         panel_estadisticas = new javax.swing.JPanel();
+        jPanel11 = new javax.swing.JPanel();
+        jLabel63 = new javax.swing.JLabel();
+        jPanel12 = new javax.swing.JPanel();
+        jLabel64 = new javax.swing.JLabel();
+        jLabel65 = new javax.swing.JLabel();
+        jSeparator12 = new javax.swing.JSeparator();
+        jPanel13 = new javax.swing.JPanel();
+        jLabel66 = new javax.swing.JLabel();
+        jLabel67 = new javax.swing.JLabel();
+        jPanel14 = new javax.swing.JPanel();
+        jLabel68 = new javax.swing.JLabel();
+        jLabel69 = new javax.swing.JLabel();
+        jPanel15 = new javax.swing.JPanel();
+        jLabel70 = new javax.swing.JLabel();
+        jLabel71 = new javax.swing.JLabel();
+        jPanel17 = new javax.swing.JPanel();
+        jLabel72 = new javax.swing.JLabel();
+        jLabel73 = new javax.swing.JLabel();
+        jPanel18 = new javax.swing.JPanel();
+        jLabel74 = new javax.swing.JLabel();
+        jLabel75 = new javax.swing.JLabel();
+        panel_tweet_creado = new javax.swing.JPanel();
+        jLabel47 = new javax.swing.JLabel();
+        jPanel7 = new javax.swing.JPanel();
+        jLabel48 = new javax.swing.JLabel();
+        panel_selecciona_cuenta = new javax.swing.JPanel();
+        jLabel50 = new javax.swing.JLabel();
+        jLabel49 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -281,8 +342,8 @@ public class Plantila extends javax.swing.JFrame {
         jLabel10.setForeground(new java.awt.Color(102, 102, 102));
         jLabel10.setText("Contraseña");
 
-        field_pw_login.setFont(new java.awt.Font("SansSerif", 0, 18)); // NOI18N
-        field_pw_login.setBorder(null);
+        field_password_login.setFont(new java.awt.Font("SansSerif", 0, 18)); // NOI18N
+        field_password_login.setBorder(null);
 
         jPanel10.setBackground(new java.awt.Color(49, 173, 144));
         jPanel10.setPreferredSize(new java.awt.Dimension(0, 2));
@@ -361,7 +422,7 @@ public class Plantila extends javax.swing.JFrame {
                                 .addGroup(iniciar_sesionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(jLabel10)
                                     .addComponent(jLabel9)
-                                    .addComponent(field_pw_login))
+                                    .addComponent(field_password_login))
                                 .addGap(100, 100, 100)))))
                 .addGap(20, 20, 20))
         );
@@ -379,17 +440,17 @@ public class Plantila extends javax.swing.JFrame {
                 .addGap(43, 43, 43)
                 .addComponent(jLabel10)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(field_pw_login, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(field_password_login, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, 0)
                 .addComponent(jPanel10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(52, 52, 52)
                 .addComponent(jPanel9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 94, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 143, Short.MAX_VALUE)
                 .addComponent(boton_gmail_login, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(boton_facebook_login, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(106, 106, 106)
-                .addComponent(jLabel13, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabel13)
                 .addGap(41, 41, 41))
         );
 
@@ -473,37 +534,42 @@ public class Plantila extends javax.swing.JFrame {
         jLabel4.setFont(new java.awt.Font("SansSerif", 0, 18)); // NOI18N
         jLabel4.setText("Contraseña");
 
-        field_username.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        field_username.setBorder(null);
+        field_username_registro.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
+        field_username_registro.setBorder(null);
 
-        field_email.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        field_email.setBorder(null);
-        field_email.addActionListener(new java.awt.event.ActionListener() {
+        field_email_registro.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
+        field_email_registro.setBorder(null);
+        field_email_registro.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                field_emailActionPerformed(evt);
+                field_email_registroActionPerformed(evt);
             }
         });
 
-        field_password.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        field_password.setBorder(null);
+        field_password_registro.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
+        field_password_registro.setBorder(null);
 
-        jPanel5.setBackground(new java.awt.Color(49, 173, 144));
+        boton_registrarse.setBackground(new java.awt.Color(49, 173, 144));
+        boton_registrarse.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                boton_registrarseMouseClicked(evt);
+            }
+        });
 
         jLabel8.setFont(new java.awt.Font("SansSerif", 0, 18)); // NOI18N
         jLabel8.setText("Registrarse");
 
-        javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
-        jPanel5.setLayout(jPanel5Layout);
-        jPanel5Layout.setHorizontalGroup(
-            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel5Layout.createSequentialGroup()
+        javax.swing.GroupLayout boton_registrarseLayout = new javax.swing.GroupLayout(boton_registrarse);
+        boton_registrarse.setLayout(boton_registrarseLayout);
+        boton_registrarseLayout.setHorizontalGroup(
+            boton_registrarseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, boton_registrarseLayout.createSequentialGroup()
                 .addContainerGap(184, Short.MAX_VALUE)
                 .addComponent(jLabel8)
                 .addGap(161, 161, 161))
         );
-        jPanel5Layout.setVerticalGroup(
-            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel5Layout.createSequentialGroup()
+        boton_registrarseLayout.setVerticalGroup(
+            boton_registrarseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, boton_registrarseLayout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel8)
                 .addContainerGap())
@@ -537,18 +603,18 @@ public class Plantila extends javax.swing.JFrame {
                             .addGroup(registroLayout.createSequentialGroup()
                                 .addGap(0, 0, Short.MAX_VALUE)
                                 .addComponent(jLabel14))
-                            .addComponent(field_password, javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(field_password_registro, javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jPanel4, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 437, Short.MAX_VALUE)
                             .addComponent(jPanel3, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 437, Short.MAX_VALUE)
-                            .addComponent(field_email, javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(field_email_registro, javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jButton7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(jButton8, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jPanel5, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(boton_registrarse, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addGroup(registroLayout.createSequentialGroup()
                                 .addComponent(titulo_registro, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addGap(68, 68, 68))
                             .addGroup(javax.swing.GroupLayout.Alignment.LEADING, registroLayout.createSequentialGroup()
-                                .addComponent(field_username)
+                                .addComponent(field_username_registro)
                                 .addGap(36, 36, 36))
                             .addComponent(jPanel2, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 437, Short.MAX_VALUE)
                             .addGroup(javax.swing.GroupLayout.Alignment.LEADING, registroLayout.createSequentialGroup()
@@ -564,23 +630,23 @@ public class Plantila extends javax.swing.JFrame {
                 .addGap(33, 33, 33)
                 .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(3, 3, 3)
-                .addComponent(field_username, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(field_username_registro, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, 0)
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(47, 47, 47)
                 .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(5, 5, 5)
-                .addComponent(field_email, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(field_email_registro, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(2, 2, 2)
                 .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(55, 55, 55)
                 .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(field_password, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(field_password_registro, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(2, 2, 2)
                 .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(36, 36, 36)
-                .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(boton_registrarse, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 85, Short.MAX_VALUE)
                 .addComponent(jButton7, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -740,12 +806,12 @@ public class Plantila extends javax.swing.JFrame {
                         .addGap(26, 26, 26)
                         .addComponent(boton_configuracion, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(panel_principalLayout.createSequentialGroup()
-                        .addGap(124, 124, 124)
+                        .addGap(133, 133, 133)
                         .addGroup(panel_principalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(boton_gestionar_cuentas, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(boton_eliminar_cuentas, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(boton_anadir_cuentas, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(136, Short.MAX_VALUE))
         );
         panel_principalLayout.setVerticalGroup(
             panel_principalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1054,6 +1120,13 @@ public class Plantila extends javax.swing.JFrame {
         elegir_cuenta.setFont(new java.awt.Font("SansSerif", 0, 18)); // NOI18N
         elegir_cuenta.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccione una cuenta", "@robertdowneyjr", "@scarlettjohansson" }));
         elegir_cuenta.setBorder(null);
+        elegir_cuenta.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                elegir_cuentaActionPerformed(evt);
+            }
+        });
+
+        subpanel_gestionar.setBackground(new java.awt.Color(255, 255, 255));
 
         opcion_crear_tweet.setBackground(new java.awt.Color(49, 173, 144));
         opcion_crear_tweet.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -1100,10 +1173,10 @@ public class Plantila extends javax.swing.JFrame {
             .addComponent(jLabel35, javax.swing.GroupLayout.DEFAULT_SIZE, 53, Short.MAX_VALUE)
         );
 
-        jPanel18.setBackground(new java.awt.Color(204, 204, 204));
-        jPanel18.addMouseListener(new java.awt.event.MouseAdapter() {
+        opcion_estadisticas.setBackground(new java.awt.Color(204, 204, 204));
+        opcion_estadisticas.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jPanel18MouseClicked(evt);
+                opcion_estadisticasMouseClicked(evt);
             }
         });
 
@@ -1111,14 +1184,14 @@ public class Plantila extends javax.swing.JFrame {
         jLabel42.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel42.setText("Estadísticas");
 
-        javax.swing.GroupLayout jPanel18Layout = new javax.swing.GroupLayout(jPanel18);
-        jPanel18.setLayout(jPanel18Layout);
-        jPanel18Layout.setHorizontalGroup(
-            jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        javax.swing.GroupLayout opcion_estadisticasLayout = new javax.swing.GroupLayout(opcion_estadisticas);
+        opcion_estadisticas.setLayout(opcion_estadisticasLayout);
+        opcion_estadisticasLayout.setHorizontalGroup(
+            opcion_estadisticasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jLabel42, javax.swing.GroupLayout.DEFAULT_SIZE, 155, Short.MAX_VALUE)
         );
-        jPanel18Layout.setVerticalGroup(
-            jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        opcion_estadisticasLayout.setVerticalGroup(
+            opcion_estadisticasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jLabel42, javax.swing.GroupLayout.DEFAULT_SIZE, 53, Short.MAX_VALUE)
         );
 
@@ -1131,58 +1204,680 @@ public class Plantila extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(opcion_mis_tweets, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jPanel18, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(opcion_estadisticas, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, Short.MAX_VALUE))
         );
         subpanel_gestionarLayout.setVerticalGroup(
             subpanel_gestionarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(opcion_crear_tweet, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
             .addComponent(opcion_mis_tweets, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-            .addComponent(jPanel18, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(opcion_estadisticas, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
         cardLayout_gestionar.setLayout(new java.awt.CardLayout());
 
         panel_crear_tweet.setBackground(new java.awt.Color(255, 255, 255));
 
+        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
+
+        jLabel15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/media/icons/foto_perfil_1.png"))); // NOI18N
+
+        jLabel43.setFont(new java.awt.Font("SansSerif", 0, 24)); // NOI18N
+        jLabel43.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel43.setText("@robertdowneyjr\n");
+
+        jTextArea1.setColumns(20);
+        jTextArea1.setFont(new java.awt.Font("SansSerif", 0, 18)); // NOI18N
+        jTextArea1.setLineWrap(true);
+        jTextArea1.setRows(5);
+        jTextArea1.setToolTipText("");
+        jTextArea1.setBorder(null);
+        jTextArea1.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                jTextArea1KeyPressed(evt);
+            }
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                jTextArea1KeyTyped(evt);
+            }
+        });
+        jScrollPane1.setViewportView(jTextArea1);
+
+        numCaracteresTweet.setText("0 / 140");
+
+        boton_tweetear.setBackground(new java.awt.Color(204, 204, 204));
+        boton_tweetear.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                boton_tweetearMouseClicked(evt);
+            }
+        });
+
+        jLabel44.setBackground(new java.awt.Color(153, 153, 153));
+        jLabel44.setFont(new java.awt.Font("SansSerif", 1, 14)); // NOI18N
+        jLabel44.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel44.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel44.setText("Tweet");
+
+        javax.swing.GroupLayout boton_tweetearLayout = new javax.swing.GroupLayout(boton_tweetear);
+        boton_tweetear.setLayout(boton_tweetearLayout);
+        boton_tweetearLayout.setHorizontalGroup(
+            boton_tweetearLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(boton_tweetearLayout.createSequentialGroup()
+                .addComponent(jLabel44, javax.swing.GroupLayout.PREFERRED_SIZE, 156, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
+        );
+        boton_tweetearLayout.setVerticalGroup(
+            boton_tweetearLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(boton_tweetearLayout.createSequentialGroup()
+                .addComponent(jLabel44, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
+        );
+
+        jLabel45.setIcon(new javax.swing.ImageIcon(getClass().getResource("/media/icons/upload.png"))); // NOI18N
+
+        jLabel46.setIcon(new javax.swing.ImageIcon(getClass().getResource("/media/icons/gif.png"))); // NOI18N
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jSeparator5)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jScrollPane1)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(jLabel15, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(jLabel43, javax.swing.GroupLayout.PREFERRED_SIZE, 289, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 48, Short.MAX_VALUE))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(10, 10, 10)
+                        .addComponent(numCaracteresTweet, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jLabel45)
+                        .addGap(18, 18, 18)
+                        .addComponent(jLabel46)
+                        .addGap(36, 36, 36)
+                        .addComponent(boton_tweetear, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap())
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jLabel15, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(23, 23, 23)
+                        .addComponent(jLabel43, javax.swing.GroupLayout.PREFERRED_SIZE, 53, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jSeparator5, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 228, Short.MAX_VALUE)
+                .addGap(18, 18, 18)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(boton_tweetear, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(numCaracteresTweet, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel45, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jLabel46, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(73, 73, 73))
+        );
+
         javax.swing.GroupLayout panel_crear_tweetLayout = new javax.swing.GroupLayout(panel_crear_tweet);
         panel_crear_tweet.setLayout(panel_crear_tweetLayout);
         panel_crear_tweetLayout.setHorizontalGroup(
             panel_crear_tweetLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 477, Short.MAX_VALUE)
+            .addGroup(panel_crear_tweetLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
         );
         panel_crear_tweetLayout.setVerticalGroup(
             panel_crear_tweetLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 600, Short.MAX_VALUE)
+            .addGroup(panel_crear_tweetLayout.createSequentialGroup()
+                .addGap(80, 80, 80)
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         cardLayout_gestionar.add(panel_crear_tweet, "card2");
+
+        panel_mis_tweets.setBackground(new java.awt.Color(255, 255, 255));
+
+        tweet_1.setBackground(new java.awt.Color(255, 255, 255));
+
+        jLabel53.setIcon(new javax.swing.ImageIcon(getClass().getResource("/media/icons/abrir_link.png"))); // NOI18N
+        jLabel53.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel53MouseClicked(evt);
+            }
+        });
+
+        jLabel54.setIcon(new javax.swing.ImageIcon(getClass().getResource("/media/icons/eliminar_tweet.png"))); // NOI18N
+        jLabel54.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel54MouseClicked(evt);
+            }
+        });
+
+        jLabel55.setText("05-05-2021");
+
+        jLabel62.setFont(new java.awt.Font("SansSerif", 0, 18)); // NOI18N
+        jLabel62.setText("Tweet número 1 de prueba...");
+
+        javax.swing.GroupLayout tweet_1Layout = new javax.swing.GroupLayout(tweet_1);
+        tweet_1.setLayout(tweet_1Layout);
+        tweet_1Layout.setHorizontalGroup(
+            tweet_1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(tweet_1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(tweet_1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(tweet_1Layout.createSequentialGroup()
+                        .addGroup(tweet_1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel55, javax.swing.GroupLayout.PREFERRED_SIZE, 178, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jSeparator6, javax.swing.GroupLayout.PREFERRED_SIZE, 136, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addComponent(jLabel62, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(tweet_1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel53, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel54, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap())
+        );
+        tweet_1Layout.setVerticalGroup(
+            tweet_1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(tweet_1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(tweet_1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(tweet_1Layout.createSequentialGroup()
+                        .addComponent(jLabel53, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jLabel54, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addGroup(tweet_1Layout.createSequentialGroup()
+                        .addComponent(jLabel55, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jSeparator6, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel62, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                .addContainerGap())
+        );
+
+        tweet_2.setBackground(new java.awt.Color(255, 255, 255));
+
+        jLabel56.setIcon(new javax.swing.ImageIcon(getClass().getResource("/media/icons/abrir_link.png"))); // NOI18N
+        jLabel56.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel56MouseClicked(evt);
+            }
+        });
+
+        jLabel57.setIcon(new javax.swing.ImageIcon(getClass().getResource("/media/icons/eliminar_tweet.png"))); // NOI18N
+        jLabel57.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel57MouseClicked(evt);
+            }
+        });
+
+        jLabel58.setText("07-05-2021");
+
+        jLabel52.setFont(new java.awt.Font("SansSerif", 0, 18)); // NOI18N
+        jLabel52.setText("Tweet número 2 con un texto más largo");
+
+        javax.swing.GroupLayout tweet_2Layout = new javax.swing.GroupLayout(tweet_2);
+        tweet_2.setLayout(tweet_2Layout);
+        tweet_2Layout.setHorizontalGroup(
+            tweet_2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(tweet_2Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(tweet_2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(tweet_2Layout.createSequentialGroup()
+                        .addGroup(tweet_2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel58, javax.swing.GroupLayout.PREFERRED_SIZE, 178, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jSeparator8, javax.swing.GroupLayout.PREFERRED_SIZE, 136, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addComponent(jLabel52, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(tweet_2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel56, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel57, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap())
+        );
+        tweet_2Layout.setVerticalGroup(
+            tweet_2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(tweet_2Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(tweet_2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(tweet_2Layout.createSequentialGroup()
+                        .addComponent(jLabel56, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jLabel57, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addGroup(tweet_2Layout.createSequentialGroup()
+                        .addComponent(jLabel58, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jSeparator8, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel52, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                .addContainerGap())
+        );
+
+        tweet_3.setBackground(new java.awt.Color(255, 255, 255));
+
+        jLabel59.setIcon(new javax.swing.ImageIcon(getClass().getResource("/media/icons/abrir_link.png"))); // NOI18N
+        jLabel59.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel59MouseClicked(evt);
+            }
+        });
+
+        jLabel60.setIcon(new javax.swing.ImageIcon(getClass().getResource("/media/icons/eliminar_tweet.png"))); // NOI18N
+        jLabel60.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel60MouseClicked(evt);
+            }
+        });
+
+        jLabel61.setText("08-05-2021");
+
+        jLabel51.setFont(new java.awt.Font("SansSerif", 0, 18)); // NOI18N
+        jLabel51.setText("Tweet número 3 con un texto aún más largo jdsadsajdasj");
+
+        javax.swing.GroupLayout tweet_3Layout = new javax.swing.GroupLayout(tweet_3);
+        tweet_3.setLayout(tweet_3Layout);
+        tweet_3Layout.setHorizontalGroup(
+            tweet_3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(tweet_3Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(tweet_3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel61, javax.swing.GroupLayout.PREFERRED_SIZE, 178, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jSeparator11, javax.swing.GroupLayout.PREFERRED_SIZE, 136, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel51, javax.swing.GroupLayout.PREFERRED_SIZE, 355, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(0, 6, Short.MAX_VALUE)
+                .addGroup(tweet_3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel59, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel60, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap())
+        );
+        tweet_3Layout.setVerticalGroup(
+            tweet_3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(tweet_3Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(tweet_3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(tweet_3Layout.createSequentialGroup()
+                        .addComponent(jLabel59, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jLabel60, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(tweet_3Layout.createSequentialGroup()
+                        .addComponent(jLabel61, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jSeparator11, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel51, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
 
         javax.swing.GroupLayout panel_mis_tweetsLayout = new javax.swing.GroupLayout(panel_mis_tweets);
         panel_mis_tweets.setLayout(panel_mis_tweetsLayout);
         panel_mis_tweetsLayout.setHorizontalGroup(
             panel_mis_tweetsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 477, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panel_mis_tweetsLayout.createSequentialGroup()
+                .addGap(22, 22, 22)
+                .addGroup(panel_mis_tweetsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jSeparator7)
+                    .addComponent(tweet_1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(tweet_2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jSeparator9)
+                    .addComponent(jSeparator10)
+                    .addComponent(tweet_3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(29, 29, 29))
         );
         panel_mis_tweetsLayout.setVerticalGroup(
             panel_mis_tweetsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 600, Short.MAX_VALUE)
+            .addGroup(panel_mis_tweetsLayout.createSequentialGroup()
+                .addGap(57, 57, 57)
+                .addComponent(tweet_1, javax.swing.GroupLayout.PREFERRED_SIZE, 122, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(jSeparator7, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(tweet_2, javax.swing.GroupLayout.PREFERRED_SIZE, 122, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(jSeparator9, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(tweet_3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(jSeparator10, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(80, Short.MAX_VALUE))
         );
 
         cardLayout_gestionar.add(panel_mis_tweets, "card3");
+
+        panel_estadisticas.setBackground(new java.awt.Color(255, 255, 255));
+
+        jPanel11.setBackground(new java.awt.Color(255, 255, 255));
+
+        jLabel63.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel63.setFont(new java.awt.Font("SansSerif", 0, 18)); // NOI18N
+        jLabel63.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel63.setText("Balance");
+
+        jPanel12.setBackground(new java.awt.Color(255, 255, 255));
+
+        jLabel64.setFont(new java.awt.Font("SansSerif", 0, 18)); // NOI18N
+        jLabel64.setText("Impresiones: ");
+
+        jLabel65.setFont(new java.awt.Font("SansSerif", 0, 18)); // NOI18N
+        jLabel65.setText("33");
+
+        javax.swing.GroupLayout jPanel12Layout = new javax.swing.GroupLayout(jPanel12);
+        jPanel12.setLayout(jPanel12Layout);
+        jPanel12Layout.setHorizontalGroup(
+            jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel12Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel12Layout.createSequentialGroup()
+                        .addComponent(jLabel64)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jLabel65)
+                        .addGap(0, 244, Short.MAX_VALUE))
+                    .addComponent(jSeparator12))
+                .addContainerGap())
+        );
+        jPanel12Layout.setVerticalGroup(
+            jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel12Layout.createSequentialGroup()
+                .addComponent(jSeparator12, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(10, 10, 10)
+                .addGroup(jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel64)
+                    .addComponent(jLabel65))
+                .addContainerGap(13, Short.MAX_VALUE))
+        );
+
+        jPanel13.setBackground(new java.awt.Color(255, 255, 255));
+
+        jLabel66.setFont(new java.awt.Font("SansSerif", 0, 18)); // NOI18N
+        jLabel66.setText("Cuentas alcanzadas:");
+
+        jLabel67.setFont(new java.awt.Font("SansSerif", 0, 18)); // NOI18N
+        jLabel67.setText("33");
+
+        javax.swing.GroupLayout jPanel13Layout = new javax.swing.GroupLayout(jPanel13);
+        jPanel13.setLayout(jPanel13Layout);
+        jPanel13Layout.setHorizontalGroup(
+            jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel13Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel66)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jLabel67)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        jPanel13Layout.setVerticalGroup(
+            jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel13Layout.createSequentialGroup()
+                .addGap(20, 20, 20)
+                .addGroup(jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel66)
+                    .addComponent(jLabel67))
+                .addContainerGap(13, Short.MAX_VALUE))
+        );
+
+        jPanel14.setBackground(new java.awt.Color(255, 255, 255));
+
+        jLabel68.setFont(new java.awt.Font("SansSerif", 0, 18)); // NOI18N
+        jLabel68.setText("Interacciones : ");
+
+        jLabel69.setFont(new java.awt.Font("SansSerif", 0, 18)); // NOI18N
+        jLabel69.setText("33");
+
+        javax.swing.GroupLayout jPanel14Layout = new javax.swing.GroupLayout(jPanel14);
+        jPanel14.setLayout(jPanel14Layout);
+        jPanel14Layout.setHorizontalGroup(
+            jPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel14Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel68)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jLabel69)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        jPanel14Layout.setVerticalGroup(
+            jPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel14Layout.createSequentialGroup()
+                .addGap(20, 20, 20)
+                .addGroup(jPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel68)
+                    .addComponent(jLabel69))
+                .addContainerGap(13, Short.MAX_VALUE))
+        );
+
+        jPanel15.setBackground(new java.awt.Color(255, 255, 255));
+
+        jLabel70.setFont(new java.awt.Font("SansSerif", 0, 18)); // NOI18N
+        jLabel70.setText("Me gustas :");
+
+        jLabel71.setFont(new java.awt.Font("SansSerif", 0, 18)); // NOI18N
+        jLabel71.setText("33");
+
+        javax.swing.GroupLayout jPanel15Layout = new javax.swing.GroupLayout(jPanel15);
+        jPanel15.setLayout(jPanel15Layout);
+        jPanel15Layout.setHorizontalGroup(
+            jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel15Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel70)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jLabel71)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        jPanel15Layout.setVerticalGroup(
+            jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel15Layout.createSequentialGroup()
+                .addGap(20, 20, 20)
+                .addGroup(jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel70)
+                    .addComponent(jLabel71))
+                .addContainerGap(13, Short.MAX_VALUE))
+        );
+
+        jPanel17.setBackground(new java.awt.Color(255, 255, 255));
+
+        jLabel72.setFont(new java.awt.Font("SansSerif", 0, 18)); // NOI18N
+        jLabel72.setText("Comentarios : ");
+
+        jLabel73.setFont(new java.awt.Font("SansSerif", 0, 18)); // NOI18N
+        jLabel73.setText("33");
+
+        javax.swing.GroupLayout jPanel17Layout = new javax.swing.GroupLayout(jPanel17);
+        jPanel17.setLayout(jPanel17Layout);
+        jPanel17Layout.setHorizontalGroup(
+            jPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel17Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel72)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jLabel73)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        jPanel17Layout.setVerticalGroup(
+            jPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel17Layout.createSequentialGroup()
+                .addGap(20, 20, 20)
+                .addGroup(jPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel72)
+                    .addComponent(jLabel73))
+                .addContainerGap(13, Short.MAX_VALUE))
+        );
+
+        jPanel18.setBackground(new java.awt.Color(255, 255, 255));
+
+        jLabel74.setFont(new java.awt.Font("SansSerif", 0, 18)); // NOI18N
+        jLabel74.setText("Retweets : ");
+
+        jLabel75.setFont(new java.awt.Font("SansSerif", 0, 18)); // NOI18N
+        jLabel75.setText("33");
+
+        javax.swing.GroupLayout jPanel18Layout = new javax.swing.GroupLayout(jPanel18);
+        jPanel18.setLayout(jPanel18Layout);
+        jPanel18Layout.setHorizontalGroup(
+            jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel18Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel74)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jLabel75)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        jPanel18Layout.setVerticalGroup(
+            jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel18Layout.createSequentialGroup()
+                .addGap(20, 20, 20)
+                .addGroup(jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel74)
+                    .addComponent(jLabel75))
+                .addContainerGap(13, Short.MAX_VALUE))
+        );
+
+        javax.swing.GroupLayout jPanel11Layout = new javax.swing.GroupLayout(jPanel11);
+        jPanel11.setLayout(jPanel11Layout);
+        jPanel11Layout.setHorizontalGroup(
+            jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jLabel63, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(jPanel11Layout.createSequentialGroup()
+                .addGap(22, 22, 22)
+                .addGroup(jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                    .addComponent(jPanel18, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jPanel17, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jPanel15, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jPanel14, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jPanel13, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jPanel12, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(35, Short.MAX_VALUE))
+        );
+        jPanel11Layout.setVerticalGroup(
+            jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel11Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel63)
+                .addGap(18, 18, 18)
+                .addComponent(jPanel12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jPanel13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jPanel14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jPanel15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jPanel17, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jPanel18, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(10, 10, 10))
+        );
 
         javax.swing.GroupLayout panel_estadisticasLayout = new javax.swing.GroupLayout(panel_estadisticas);
         panel_estadisticas.setLayout(panel_estadisticasLayout);
         panel_estadisticasLayout.setHorizontalGroup(
             panel_estadisticasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 477, Short.MAX_VALUE)
+            .addGroup(panel_estadisticasLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jPanel11, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
         );
         panel_estadisticasLayout.setVerticalGroup(
             panel_estadisticasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 600, Short.MAX_VALUE)
+            .addGroup(panel_estadisticasLayout.createSequentialGroup()
+                .addGap(85, 85, 85)
+                .addComponent(jPanel11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(75, Short.MAX_VALUE))
         );
 
         cardLayout_gestionar.add(panel_estadisticas, "card4");
+
+        panel_tweet_creado.setBackground(new java.awt.Color(255, 255, 255));
+
+        jLabel47.setFont(new java.awt.Font("SansSerif", 0, 18)); // NOI18N
+        jLabel47.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel47.setText("Tweet publicado satisfactoriamente.");
+
+        jPanel7.setBackground(new java.awt.Color(0, 172, 238));
+        jPanel7.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jPanel7MouseClicked(evt);
+            }
+        });
+
+        jLabel48.setFont(new java.awt.Font("SansSerif", 0, 18)); // NOI18N
+        jLabel48.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel48.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel48.setText("Aceptar");
+
+        javax.swing.GroupLayout jPanel7Layout = new javax.swing.GroupLayout(jPanel7);
+        jPanel7.setLayout(jPanel7Layout);
+        jPanel7Layout.setHorizontalGroup(
+            jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jLabel48, javax.swing.GroupLayout.DEFAULT_SIZE, 230, Short.MAX_VALUE)
+        );
+        jPanel7Layout.setVerticalGroup(
+            jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jLabel48, javax.swing.GroupLayout.DEFAULT_SIZE, 48, Short.MAX_VALUE)
+        );
+
+        javax.swing.GroupLayout panel_tweet_creadoLayout = new javax.swing.GroupLayout(panel_tweet_creado);
+        panel_tweet_creado.setLayout(panel_tweet_creadoLayout);
+        panel_tweet_creadoLayout.setHorizontalGroup(
+            panel_tweet_creadoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panel_tweet_creadoLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jPanel7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(123, 123, 123))
+            .addGroup(panel_tweet_creadoLayout.createSequentialGroup()
+                .addGap(53, 53, 53)
+                .addComponent(jLabel47, javax.swing.GroupLayout.PREFERRED_SIZE, 376, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(48, Short.MAX_VALUE))
+        );
+        panel_tweet_creadoLayout.setVerticalGroup(
+            panel_tweet_creadoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panel_tweet_creadoLayout.createSequentialGroup()
+                .addGap(228, 228, 228)
+                .addComponent(jLabel47, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jPanel7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(255, Short.MAX_VALUE))
+        );
+
+        cardLayout_gestionar.add(panel_tweet_creado, "card5");
+
+        panel_selecciona_cuenta.setBackground(new java.awt.Color(255, 255, 255));
+
+        jLabel50.setFont(new java.awt.Font("SansSerif", 0, 16)); // NOI18N
+        jLabel50.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel50.setText("Selecciona una cuenta desde el menú de arriba primero.");
+
+        javax.swing.GroupLayout panel_selecciona_cuentaLayout = new javax.swing.GroupLayout(panel_selecciona_cuenta);
+        panel_selecciona_cuenta.setLayout(panel_selecciona_cuentaLayout);
+        panel_selecciona_cuentaLayout.setHorizontalGroup(
+            panel_selecciona_cuentaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jLabel50, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 477, Short.MAX_VALUE)
+        );
+        panel_selecciona_cuentaLayout.setVerticalGroup(
+            panel_selecciona_cuentaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panel_selecciona_cuentaLayout.createSequentialGroup()
+                .addGap(254, 254, 254)
+                .addComponent(jLabel50, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(285, Short.MAX_VALUE))
+        );
+
+        cardLayout_gestionar.add(panel_selecciona_cuenta, "card6");
+
+        jLabel49.setIcon(new javax.swing.ImageIcon(getClass().getResource("/media/icons/left-arrow.png"))); // NOI18N
+        jLabel49.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel49MouseClicked(evt);
+            }
+        });
 
         javax.swing.GroupLayout panel_gestionarLayout = new javax.swing.GroupLayout(panel_gestionar);
         panel_gestionar.setLayout(panel_gestionarLayout);
@@ -1194,6 +1889,10 @@ public class Plantila extends javax.swing.JFrame {
                 .addGap(108, 108, 108)
                 .addComponent(elegir_cuenta, javax.swing.GroupLayout.PREFERRED_SIZE, 255, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panel_gestionarLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel49, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(21, 21, 21))
         );
         panel_gestionarLayout.setVerticalGroup(
             panel_gestionarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1204,7 +1903,9 @@ public class Plantila extends javax.swing.JFrame {
                 .addComponent(subpanel_gestionar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(cardLayout_gestionar, javax.swing.GroupLayout.PREFERRED_SIZE, 600, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(123, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 55, Short.MAX_VALUE)
+                .addComponent(jLabel49, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(36, 36, 36))
         );
 
         main_cardLayout.add(panel_gestionar, "card6");
@@ -1227,9 +1928,9 @@ public class Plantila extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton8ActionPerformed
 
-    private void field_emailActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_field_emailActionPerformed
+    private void field_email_registroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_field_email_registroActionPerformed
         
-    }//GEN-LAST:event_field_emailActionPerformed
+    }//GEN-LAST:event_field_email_registroActionPerformed
 
     private void boton_iniciar_sesion_inicioMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_boton_iniciar_sesion_inicioMouseClicked
         inicio.setVisible(false);
@@ -1246,11 +1947,22 @@ public class Plantila extends javax.swing.JFrame {
     }//GEN-LAST:event_field_username_loginActionPerformed
 
     private void jLabel14MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel14MouseClicked
+        
+        field_username_registro.setText("");
+        field_email_registro.setText("");
+        field_password_registro.setText("");
+        
+        
+        
+        
         registro.setVisible(false);
         inicio.setVisible(true);
     }//GEN-LAST:event_jLabel14MouseClicked
 
     private void jLabel13MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel13MouseClicked
+        field_username_login.setText("");
+        field_password_login.setText("");
+
         iniciar_sesion.setVisible(false);
         inicio.setVisible(true);
     }//GEN-LAST:event_jLabel13MouseClicked
@@ -1306,27 +2018,191 @@ public class Plantila extends javax.swing.JFrame {
     }//GEN-LAST:event_boton_eliminar_cuentasMouseClicked
 
     private void opcion_crear_tweetMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_opcion_crear_tweetMouseClicked
-        opcion_crear_tweet.setBackground(new Color(49,173,144));
-        opcion_mis_tweets.setBackground(new Color(204,204,204));
-        jPanel18.setBackground(new Color(204,204,204));
+        String x = String.valueOf(elegir_cuenta.getSelectedItem());
+        if(x.compareTo("Seleccione una cuenta") != 0)
+        {
+            opcion_crear_tweet.setBackground(new Color(49,173,144));
+            opcion_mis_tweets.setBackground(new Color(204,204,204));
+            opcion_estadisticas.setBackground(new Color(204,204,204));
+            panel_crear_tweet.setVisible(true);
+            panel_estadisticas.setVisible(false);
+            panel_mis_tweets.setVisible(false);            
+        }
+        else
+        {
+            panel_selecciona_cuenta.setVisible(true);
+            panel_crear_tweet.setVisible(false);
+            panel_estadisticas.setVisible(false);
+            panel_mis_tweets.setVisible(false);
+            opcion_crear_tweet.setBackground(new Color(204,204,204));
+            opcion_mis_tweets.setBackground(new Color(204,204,204));
+            opcion_estadisticas.setBackground(new Color(204,204,204));
+        }
+        
+
     }//GEN-LAST:event_opcion_crear_tweetMouseClicked
 
     private void opcion_mis_tweetsMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_opcion_mis_tweetsMouseClicked
-        opcion_mis_tweets.setBackground(new Color(49,173,144));
-        opcion_crear_tweet.setBackground(new Color(204,204,204));
-        jPanel18.setBackground(new Color(204,204,204));        
+        String x = String.valueOf(elegir_cuenta.getSelectedItem());
+        if(x.compareTo("Seleccione una cuenta") != 0)
+        {
+            opcion_mis_tweets.setBackground(new Color(49,173,144));
+            opcion_crear_tweet.setBackground(new Color(204,204,204));
+            opcion_estadisticas.setBackground(new Color(204,204,204));
+            panel_crear_tweet.setVisible(false);
+            panel_estadisticas.setVisible(false);
+            panel_mis_tweets.setVisible(true);            
+        }
+        else
+        {
+            panel_selecciona_cuenta.setVisible(true);
+            panel_crear_tweet.setVisible(false);
+            panel_estadisticas.setVisible(false);
+            panel_mis_tweets.setVisible(false); 
+            opcion_crear_tweet.setBackground(new Color(204,204,204));
+            opcion_mis_tweets.setBackground(new Color(204,204,204));
+            opcion_estadisticas.setBackground(new Color(204,204,204));
+        }
     }//GEN-LAST:event_opcion_mis_tweetsMouseClicked
 
-    private void jPanel18MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel18MouseClicked
-        jPanel18.setBackground(new Color(49,173,144));
-        opcion_mis_tweets.setBackground(new Color(204,204,204));
-        opcion_crear_tweet.setBackground(new Color(204,204,204));       
-    }//GEN-LAST:event_jPanel18MouseClicked
+    private void opcion_estadisticasMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_opcion_estadisticasMouseClicked
+        String x = String.valueOf(elegir_cuenta.getSelectedItem());
+        if(x.compareTo("Seleccione una cuenta") != 0)
+        {
+            opcion_estadisticas.setBackground(new Color(49,173,144));
+            opcion_mis_tweets.setBackground(new Color(204,204,204));
+            opcion_crear_tweet.setBackground(new Color(204,204,204));
+            panel_crear_tweet.setVisible(false);
+            panel_estadisticas.setVisible(true);
+            panel_mis_tweets.setVisible(false);            
+        }
+        else
+        {
+            panel_selecciona_cuenta.setVisible(true);
+            panel_crear_tweet.setVisible(false);
+            panel_estadisticas.setVisible(false);
+            panel_mis_tweets.setVisible(false);  
+            opcion_crear_tweet.setBackground(new Color(204,204,204));
+            opcion_mis_tweets.setBackground(new Color(204,204,204));
+            opcion_estadisticas.setBackground(new Color(204,204,204));
+        }
+    }//GEN-LAST:event_opcion_estadisticasMouseClicked
 
     private void boton_gestionar_cuentasMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_boton_gestionar_cuentasMouseClicked
         menu_principal.setVisible(false);
         panel_gestionar.setVisible(true);
+        panel_selecciona_cuenta.setVisible(true);
+        panel_crear_tweet.setVisible(false);
+        panel_mis_tweets.setVisible(false);
+        panel_estadisticas.setVisible(false);
+        opcion_crear_tweet.setBackground(new Color(204,204,204));
+        opcion_mis_tweets.setBackground(new Color(204,204,204));
+        opcion_estadisticas.setBackground(new Color(204,204,204));
+        elegir_cuenta.setSelectedIndex(0);
     }//GEN-LAST:event_boton_gestionar_cuentasMouseClicked
+
+    private void jTextArea1KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextArea1KeyPressed
+
+    }//GEN-LAST:event_jTextArea1KeyPressed
+
+    private void boton_tweetearMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_boton_tweetearMouseClicked
+        
+        String texto = jTextArea1.getText();
+        int numCaracteres = texto.length();
+        if(numCaracteres > 0 && numCaracteres <= 140)
+        {
+            panel_crear_tweet.setVisible(false);
+            panel_tweet_creado.setVisible(true);            
+        }
+
+    }//GEN-LAST:event_boton_tweetearMouseClicked
+
+    private void jPanel7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel7MouseClicked
+        panel_tweet_creado.setVisible(false);
+        jTextArea1.setText("");
+        numCaracteresTweet.setText("0 / 140");
+        panel_crear_tweet.setVisible(true);
+        boton_tweetear.setBackground(new Color(153,153,153));
+    }//GEN-LAST:event_jPanel7MouseClicked
+
+    private void jLabel49MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel49MouseClicked
+        panel_gestionar.setVisible(false);
+        menu_principal.setVisible(true);
+    }//GEN-LAST:event_jLabel49MouseClicked
+
+    private void elegir_cuentaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_elegir_cuentaActionPerformed
+        String x = String.valueOf(elegir_cuenta.getSelectedItem());
+        if(x.compareTo("Seleccione una cuenta") != 0)
+        {
+            opcion_crear_tweet.setBackground(new Color(49,173,144));
+            opcion_mis_tweets.setBackground(new Color(204,204,204));
+            opcion_estadisticas.setBackground(new Color(204,204,204));
+            panel_crear_tweet.setVisible(true);
+            panel_estadisticas.setVisible(false);
+            panel_mis_tweets.setVisible(false);                
+        }
+        else
+        {
+            panel_selecciona_cuenta.setVisible(true);
+            panel_crear_tweet.setVisible(false);
+            panel_estadisticas.setVisible(false);
+            panel_mis_tweets.setVisible(false);    
+            panel_tweet_creado.setVisible(false);
+            opcion_crear_tweet.setBackground(new Color(204,204,204));
+            opcion_mis_tweets.setBackground(new Color(204,204,204));
+            opcion_estadisticas.setBackground(new Color(204,204,204));
+        }
+    }//GEN-LAST:event_elegir_cuentaActionPerformed
+
+    private void jLabel53MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel53MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jLabel53MouseClicked
+
+    private void jLabel54MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel54MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jLabel54MouseClicked
+
+    private void jLabel56MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel56MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jLabel56MouseClicked
+
+    private void jLabel57MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel57MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jLabel57MouseClicked
+
+    private void jLabel59MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel59MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jLabel59MouseClicked
+
+    private void jLabel60MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel60MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jLabel60MouseClicked
+
+    private void jTextArea1KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextArea1KeyTyped
+        String texto = jTextArea1.getText();
+        int numCaracteres = texto.length();
+        if(numCaracteres > 140)
+            numCaracteresTweet.setForeground(Color.red);
+        else
+            numCaracteresTweet.setForeground(Color.black);
+        
+        
+        if(numCaracteres > 0 && numCaracteres <= 140)
+            boton_tweetear.setBackground(new Color(0,172,238));
+        else
+            boton_tweetear.setBackground(new Color(153,153,153));
+               
+        numCaracteresTweet.setText(numCaracteres+" / 140");
+    }//GEN-LAST:event_jTextArea1KeyTyped
+
+    private void boton_registrarseMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_boton_registrarseMouseClicked
+        field_username_registro.setText("");
+        field_email_registro.setText("");
+        field_password_registro.setText("");
+        
+        registro.setVisible(false);
+        iniciar_sesion.setVisible(true);
+    }//GEN-LAST:event_boton_registrarseMouseClicked
 
     /**
      * @param args the command line arguments
@@ -1371,18 +2247,20 @@ public class Plantila extends javax.swing.JFrame {
     private javax.swing.JPanel boton_gestionar_cuentas;
     private javax.swing.JButton boton_gmail_login;
     private javax.swing.JPanel boton_iniciar_sesion_inicio;
+    private javax.swing.JPanel boton_registrarse;
     private javax.swing.JPanel boton_registro_inicio;
+    private javax.swing.JPanel boton_tweetear;
     private javax.swing.JPanel cardLayout_gestionar;
     private javax.swing.JPanel cardLayout_menuprincipal;
     private javax.swing.JPanel cuenta_1;
     private javax.swing.JPanel cuenta_2;
     private javax.swing.JPanel cuenta_3;
     private javax.swing.JComboBox<String> elegir_cuenta;
-    private javax.swing.JTextField field_email;
-    private javax.swing.JPasswordField field_password;
-    private javax.swing.JPasswordField field_pw_login;
-    private javax.swing.JTextField field_username;
+    private javax.swing.JTextField field_email_registro;
+    private javax.swing.JPasswordField field_password_login;
+    private javax.swing.JPasswordField field_password_registro;
     private javax.swing.JTextField field_username_login;
+    private javax.swing.JTextField field_username_registro;
     private javax.swing.JPanel iniciar_sesion;
     private javax.swing.JPanel inicio;
     private javax.swing.JButton jButton7;
@@ -1393,6 +2271,7 @@ public class Plantila extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel18;
@@ -1423,29 +2302,80 @@ public class Plantila extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel40;
     private javax.swing.JLabel jLabel41;
     private javax.swing.JLabel jLabel42;
+    private javax.swing.JLabel jLabel43;
+    private javax.swing.JLabel jLabel44;
+    private javax.swing.JLabel jLabel45;
+    private javax.swing.JLabel jLabel46;
+    private javax.swing.JLabel jLabel47;
+    private javax.swing.JLabel jLabel48;
+    private javax.swing.JLabel jLabel49;
     private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel50;
+    private javax.swing.JLabel jLabel51;
+    private javax.swing.JLabel jLabel52;
+    private javax.swing.JLabel jLabel53;
+    private javax.swing.JLabel jLabel54;
+    private javax.swing.JLabel jLabel55;
+    private javax.swing.JLabel jLabel56;
+    private javax.swing.JLabel jLabel57;
+    private javax.swing.JLabel jLabel58;
+    private javax.swing.JLabel jLabel59;
     private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel60;
+    private javax.swing.JLabel jLabel61;
+    private javax.swing.JLabel jLabel62;
+    private javax.swing.JLabel jLabel63;
+    private javax.swing.JLabel jLabel64;
+    private javax.swing.JLabel jLabel65;
+    private javax.swing.JLabel jLabel66;
+    private javax.swing.JLabel jLabel67;
+    private javax.swing.JLabel jLabel68;
+    private javax.swing.JLabel jLabel69;
     private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel70;
+    private javax.swing.JLabel jLabel71;
+    private javax.swing.JLabel jLabel72;
+    private javax.swing.JLabel jLabel73;
+    private javax.swing.JLabel jLabel74;
+    private javax.swing.JLabel jLabel75;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
+    private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel10;
+    private javax.swing.JPanel jPanel11;
+    private javax.swing.JPanel jPanel12;
+    private javax.swing.JPanel jPanel13;
+    private javax.swing.JPanel jPanel14;
     private javax.swing.JPanel jPanel15;
     private javax.swing.JPanel jPanel16;
+    private javax.swing.JPanel jPanel17;
     private javax.swing.JPanel jPanel18;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
-    private javax.swing.JPanel jPanel5;
+    private javax.swing.JPanel jPanel7;
     private javax.swing.JPanel jPanel8;
     private javax.swing.JPanel jPanel9;
+    private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JSeparator jSeparator1;
+    private javax.swing.JSeparator jSeparator10;
+    private javax.swing.JSeparator jSeparator11;
+    private javax.swing.JSeparator jSeparator12;
     private javax.swing.JSeparator jSeparator2;
     private javax.swing.JSeparator jSeparator3;
     private javax.swing.JSeparator jSeparator4;
+    private javax.swing.JSeparator jSeparator5;
+    private javax.swing.JSeparator jSeparator6;
+    private javax.swing.JSeparator jSeparator7;
+    private javax.swing.JSeparator jSeparator8;
+    private javax.swing.JSeparator jSeparator9;
+    private javax.swing.JTextArea jTextArea1;
     private javax.swing.JPanel main_cardLayout;
     private javax.swing.JPanel menu_principal;
     private javax.swing.JLabel nombre_usuario;
+    private javax.swing.JLabel numCaracteresTweet;
     private javax.swing.JPanel opcion_crear_tweet;
+    private javax.swing.JPanel opcion_estadisticas;
     private javax.swing.JPanel opcion_mis_tweets;
     private javax.swing.JPanel panel_anadir_cuentas;
     private javax.swing.JPanel panel_crear_tweet;
@@ -1454,9 +2384,14 @@ public class Plantila extends javax.swing.JFrame {
     private javax.swing.JPanel panel_gestionar;
     private javax.swing.JPanel panel_mis_tweets;
     private javax.swing.JPanel panel_principal;
+    private javax.swing.JPanel panel_selecciona_cuenta;
     private javax.swing.JPanel panel_superior;
+    private javax.swing.JPanel panel_tweet_creado;
     private javax.swing.JPanel registro;
     private javax.swing.JPanel subpanel_gestionar;
     private javax.swing.JLabel titulo_registro;
+    private javax.swing.JPanel tweet_1;
+    private javax.swing.JPanel tweet_2;
+    private javax.swing.JPanel tweet_3;
     // End of variables declaration//GEN-END:variables
 }
