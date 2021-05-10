@@ -119,6 +119,18 @@ public class Plantila extends javax.swing.JFrame {
         titulo_panel_configuracion1 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         notificaciones_btn = new javax.swing.JToggleButton();
+        titulo_panel_configuracion2 = new javax.swing.JLabel();
+        jPanel5 = new javax.swing.JPanel();
+        jPanel6 = new javax.swing.JPanel();
+        jPanel9 = new javax.swing.JPanel();
+        field_password_registro1 = new javax.swing.JPasswordField();
+        jLabel5 = new javax.swing.JLabel();
+        field_email_registro1 = new javax.swing.JTextField();
+        jLabel6 = new javax.swing.JLabel();
+        field_username_registro1 = new javax.swing.JTextField();
+        jLabel7 = new javax.swing.JLabel();
+        boton_registrarse1 = new javax.swing.JButton();
+        jButton2 = new javax.swing.JButton();
         panel_gestionar = new javax.swing.JPanel();
         elegir_cuenta = new javax.swing.JComboBox<>();
         subpanel_gestionar = new javax.swing.JPanel();
@@ -225,7 +237,7 @@ public class Plantila extends javax.swing.JFrame {
 
         registro_btn3.setBackground(new java.awt.Color(49, 173, 144));
         registro_btn3.setFont(new java.awt.Font("SansSerif", 1, 24)); // NOI18N
-        registro_btn3.setText(bundle.getString("Registro")); // NOI18N
+        registro_btn3.setText(bundle.getString("Registro_menu_principal")); // NOI18N
         registro_btn3.setAlignmentY(0.0F);
         registro_btn3.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -282,7 +294,6 @@ public class Plantila extends javax.swing.JFrame {
         iniciar_sesion.setBackground(new java.awt.Color(255, 255, 255));
 
         field_username_login.setFont(new java.awt.Font("SansSerif", 0, 18)); // NOI18N
-        field_username_login.setText(bundle.getString("email")); // NOI18N
         field_username_login.setBorder(null);
         field_username_login.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -386,17 +397,17 @@ public class Plantila extends javax.swing.JFrame {
                                 .addComponent(jLabel11, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addGap(68, 68, 68))
                             .addComponent(boton_gmail_login, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(boton_facebook_login, javax.swing.GroupLayout.DEFAULT_SIZE, 449, Short.MAX_VALUE)
-                            .addComponent(jPanel10, javax.swing.GroupLayout.DEFAULT_SIZE, 449, Short.MAX_VALUE)
+                            .addComponent(boton_facebook_login, javax.swing.GroupLayout.DEFAULT_SIZE, 457, Short.MAX_VALUE)
+                            .addComponent(jPanel10, javax.swing.GroupLayout.DEFAULT_SIZE, 457, Short.MAX_VALUE)
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, iniciar_sesionLayout.createSequentialGroup()
                                 .addComponent(jLabel10)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 350, Short.MAX_VALUE))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 358, Short.MAX_VALUE))
                             .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addGroup(iniciar_sesionLayout.createSequentialGroup()
                                 .addComponent(jLabel76)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addComponent(campos_vacios_login))
-                            .addComponent(jPanel8, javax.swing.GroupLayout.DEFAULT_SIZE, 449, Short.MAX_VALUE)
+                            .addComponent(jPanel8, javax.swing.GroupLayout.DEFAULT_SIZE, 457, Short.MAX_VALUE)
                             .addComponent(field_username_login))))
                 .addGap(20, 20, 20))
         );
@@ -571,8 +582,8 @@ public class Plantila extends javax.swing.JFrame {
                                 .addGap(0, 0, Short.MAX_VALUE)
                                 .addComponent(jLabel14))
                             .addComponent(field_password_registro, javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jPanel4, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 449, Short.MAX_VALUE)
-                            .addComponent(jPanel3, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 449, Short.MAX_VALUE)
+                            .addComponent(jPanel4, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 457, Short.MAX_VALUE)
+                            .addComponent(jPanel3, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 457, Short.MAX_VALUE)
                             .addComponent(field_email_registro, javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jButton7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(jButton8, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -582,10 +593,10 @@ public class Plantila extends javax.swing.JFrame {
                             .addGroup(javax.swing.GroupLayout.Alignment.LEADING, registroLayout.createSequentialGroup()
                                 .addComponent(field_username_registro)
                                 .addGap(36, 36, 36))
-                            .addComponent(jPanel2, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 449, Short.MAX_VALUE)
+                            .addComponent(jPanel2, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 457, Short.MAX_VALUE)
                             .addGroup(javax.swing.GroupLayout.Alignment.LEADING, registroLayout.createSequentialGroup()
                                 .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 167, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 125, Short.MAX_VALUE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 133, Short.MAX_VALUE)
                                 .addComponent(campos_vacios_registro))
                             .addComponent(boton_registrarse, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                         .addGap(20, 20, 20))))
@@ -791,7 +802,7 @@ public class Plantila extends javax.swing.JFrame {
                             .addComponent(boton_gestionar_cuentas, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(boton_eliminar_cuentas, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(boton_anadir_cuentas, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addContainerGap(144, Short.MAX_VALUE))
+                .addContainerGap(152, Short.MAX_VALUE))
         );
         panel_principalLayout.setVerticalGroup(
             panel_principalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -866,7 +877,7 @@ public class Plantila extends javax.swing.JFrame {
                     .addComponent(jLabel28, javax.swing.GroupLayout.DEFAULT_SIZE, 435, Short.MAX_VALUE)
                     .addComponent(jLabel29, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jPanel16, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap(18, Short.MAX_VALUE))
+                .addContainerGap(26, Short.MAX_VALUE))
         );
         panel_anadir_cuentasLayout.setVerticalGroup(
             panel_anadir_cuentasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1071,6 +1082,8 @@ public class Plantila extends javax.swing.JFrame {
 
         cardLayout_menuprincipal.add(panel_eliminar_cuentas, "card4");
 
+        panel_configuracion.setBackground(new java.awt.Color(255, 255, 255));
+
         titulo_panel_configuracion.setFont(new java.awt.Font("SansSerif", 0, 48)); // NOI18N
         titulo_panel_configuracion.setForeground(new java.awt.Color(49, 173, 144));
         titulo_panel_configuracion.setText("Configuración");
@@ -1083,20 +1096,140 @@ public class Plantila extends javax.swing.JFrame {
         jLabel1.setForeground(new java.awt.Color(102, 102, 102));
         jLabel1.setText("Mostrar Notificaciones");
 
-        notificaciones_btn.setText("jToggleButton1");
+        notificaciones_btn.setBackground(new java.awt.Color(49, 173, 144));
+        notificaciones_btn.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
+        notificaciones_btn.setSelected(true);
+        notificaciones_btn.setText(bundle.getString("notificaciones_on")); // NOI18N
+        notificaciones_btn.setToolTipText(bundle.getString("notificaciones_off")); // NOI18N
+        notificaciones_btn.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                notificaciones_btnMouseClicked(evt);
+            }
+        });
+
+        titulo_panel_configuracion2.setFont(new java.awt.Font("SansSerif", 1, 24)); // NOI18N
+        titulo_panel_configuracion2.setForeground(new java.awt.Color(49, 173, 144));
+        titulo_panel_configuracion2.setText("Cuenta");
+
+        jPanel5.setBackground(new java.awt.Color(49, 173, 144));
+        jPanel5.setForeground(new java.awt.Color(49, 173, 144));
+        jPanel5.setPreferredSize(new java.awt.Dimension(0, 2));
+
+        javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
+        jPanel5.setLayout(jPanel5Layout);
+        jPanel5Layout.setHorizontalGroup(
+            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 0, Short.MAX_VALUE)
+        );
+        jPanel5Layout.setVerticalGroup(
+            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 2, Short.MAX_VALUE)
+        );
+
+        jPanel6.setBackground(new java.awt.Color(49, 173, 144));
+        jPanel6.setForeground(new java.awt.Color(49, 173, 144));
+        jPanel6.setPreferredSize(new java.awt.Dimension(0, 2));
+
+        javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
+        jPanel6.setLayout(jPanel6Layout);
+        jPanel6Layout.setHorizontalGroup(
+            jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 0, Short.MAX_VALUE)
+        );
+        jPanel6Layout.setVerticalGroup(
+            jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 2, Short.MAX_VALUE)
+        );
+
+        jPanel9.setBackground(new java.awt.Color(49, 173, 144));
+        jPanel9.setForeground(new java.awt.Color(49, 173, 144));
+        jPanel9.setPreferredSize(new java.awt.Dimension(0, 2));
+
+        javax.swing.GroupLayout jPanel9Layout = new javax.swing.GroupLayout(jPanel9);
+        jPanel9.setLayout(jPanel9Layout);
+        jPanel9Layout.setHorizontalGroup(
+            jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 0, Short.MAX_VALUE)
+        );
+        jPanel9Layout.setVerticalGroup(
+            jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 2, Short.MAX_VALUE)
+        );
+
+        field_password_registro1.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
+        field_password_registro1.setBorder(null);
+
+        jLabel5.setBackground(new java.awt.Color(102, 102, 102));
+        jLabel5.setFont(new java.awt.Font("SansSerif", 1, 18)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(102, 102, 102));
+        jLabel5.setText("Contraseña");
+
+        field_email_registro1.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
+        field_email_registro1.setBorder(null);
+        field_email_registro1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                field_email_registro1ActionPerformed(evt);
+            }
+        });
+
+        jLabel6.setBackground(new java.awt.Color(102, 102, 102));
+        jLabel6.setFont(new java.awt.Font("SansSerif", 1, 18)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(102, 102, 102));
+        jLabel6.setText("E-mail");
+
+        field_username_registro1.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
+        field_username_registro1.setBorder(null);
+
+        jLabel7.setBackground(new java.awt.Color(102, 102, 102));
+        jLabel7.setFont(new java.awt.Font("SansSerif", 1, 18)); // NOI18N
+        jLabel7.setForeground(new java.awt.Color(102, 102, 102));
+        jLabel7.setText("Nombre de usuario");
+
+        boton_registrarse1.setBackground(new java.awt.Color(49, 173, 144));
+        boton_registrarse1.setFont(new java.awt.Font("SansSerif", 1, 24)); // NOI18N
+        boton_registrarse1.setForeground(new java.awt.Color(248, 248, 248));
+        boton_registrarse1.setText(bundle.getString("aceptar")); // NOI18N
+        boton_registrarse1.setBorder(null);
+        boton_registrarse1.setBorderPainted(false);
+        boton_registrarse1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                boton_registrarse1MouseClicked(evt);
+            }
+        });
+
+        jButton2.setBackground(new java.awt.Color(255, 51, 51));
+        jButton2.setFont(new java.awt.Font("SansSerif", 1, 24)); // NOI18N
+        jButton2.setForeground(new java.awt.Color(248, 248, 248));
+        jButton2.setText(bundle.getString("eliminar_perfil")); // NOI18N
 
         javax.swing.GroupLayout panel_configuracionLayout = new javax.swing.GroupLayout(panel_configuracion);
         panel_configuracion.setLayout(panel_configuracionLayout);
         panel_configuracionLayout.setHorizontalGroup(
             panel_configuracionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(titulo_panel_configuracion, javax.swing.GroupLayout.DEFAULT_SIZE, 465, Short.MAX_VALUE)
-            .addComponent(titulo_panel_configuracion1, javax.swing.GroupLayout.DEFAULT_SIZE, 465, Short.MAX_VALUE)
+            .addComponent(titulo_panel_configuracion, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(titulo_panel_configuracion1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(titulo_panel_configuracion2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(field_password_registro1)
+            .addComponent(jPanel9, javax.swing.GroupLayout.DEFAULT_SIZE, 473, Short.MAX_VALUE)
+            .addComponent(jPanel6, javax.swing.GroupLayout.DEFAULT_SIZE, 473, Short.MAX_VALUE)
+            .addComponent(field_email_registro1)
             .addGroup(panel_configuracionLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 235, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(notificaciones_btn)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addComponent(field_username_registro1)
+                .addGap(36, 36, 36))
+            .addComponent(jPanel5, javax.swing.GroupLayout.DEFAULT_SIZE, 473, Short.MAX_VALUE)
+            .addGroup(panel_configuracionLayout.createSequentialGroup()
+                .addGroup(panel_configuracionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(panel_configuracionLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 235, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(notificaciones_btn, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 167, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 167, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 167, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(143, Short.MAX_VALUE))
+            .addComponent(boton_registrarse1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         panel_configuracionLayout.setVerticalGroup(
             panel_configuracionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1108,7 +1241,31 @@ public class Plantila extends javax.swing.JFrame {
                 .addGroup(panel_configuracionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(notificaciones_btn))
-                .addGap(0, 603, Short.MAX_VALUE))
+                .addGap(18, 18, 18)
+                .addComponent(titulo_panel_configuracion2)
+                .addGap(18, 18, 18)
+                .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(3, 3, 3)
+                .addComponent(field_username_registro1, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0)
+                .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(47, 47, 47)
+                .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(5, 5, 5)
+                .addComponent(field_email_registro1, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(2, 2, 2)
+                .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(55, 55, 55)
+                .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(field_password_registro1, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(2, 2, 2)
+                .addComponent(jPanel9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(boton_registrarse1, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 100, Short.MAX_VALUE)
+                .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(33, 33, 33))
         );
 
         cardLayout_menuprincipal.add(panel_configuracion, "card5");
@@ -1307,7 +1464,7 @@ public class Plantila extends javax.swing.JFrame {
                         .addComponent(jLabel15, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
                         .addComponent(jLabel43, javax.swing.GroupLayout.PREFERRED_SIZE, 289, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 52, Short.MAX_VALUE))
+                        .addGap(0, 60, Short.MAX_VALUE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(10, 10, 10)
                         .addComponent(numCaracteresTweet, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -1512,7 +1669,7 @@ public class Plantila extends javax.swing.JFrame {
                     .addComponent(jLabel61, javax.swing.GroupLayout.PREFERRED_SIZE, 178, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jSeparator11, javax.swing.GroupLayout.PREFERRED_SIZE, 136, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel51, javax.swing.GroupLayout.PREFERRED_SIZE, 355, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(0, 14, Short.MAX_VALUE)
+                .addGap(0, 22, Short.MAX_VALUE)
                 .addGroup(tweet_3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel59, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel60, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -1773,7 +1930,7 @@ public class Plantila extends javax.swing.JFrame {
                     .addComponent(jPanel14, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jPanel13, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jPanel12, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(35, Short.MAX_VALUE))
+                .addContainerGap(43, Short.MAX_VALUE))
         );
         jPanel11Layout.setVerticalGroup(
             jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1854,7 +2011,7 @@ public class Plantila extends javax.swing.JFrame {
             .addGroup(panel_tweet_creadoLayout.createSequentialGroup()
                 .addGap(53, 53, 53)
                 .addComponent(jLabel47, javax.swing.GroupLayout.PREFERRED_SIZE, 376, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(60, Short.MAX_VALUE))
+                .addContainerGap(68, Short.MAX_VALUE))
         );
         panel_tweet_creadoLayout.setVerticalGroup(
             panel_tweet_creadoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1878,7 +2035,7 @@ public class Plantila extends javax.swing.JFrame {
         panel_selecciona_cuenta.setLayout(panel_selecciona_cuentaLayout);
         panel_selecciona_cuentaLayout.setHorizontalGroup(
             panel_selecciona_cuentaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel50, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 489, Short.MAX_VALUE)
+            .addComponent(jLabel50, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 497, Short.MAX_VALUE)
         );
         panel_selecciona_cuentaLayout.setVerticalGroup(
             panel_selecciona_cuentaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -2232,6 +2389,26 @@ public class Plantila extends javax.swing.JFrame {
         panel_configuracion.setVisible(true);
     }//GEN-LAST:event_boton_configuracionMouseClicked
 
+    private void notificaciones_btnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_notificaciones_btnMouseClicked
+        // TODO add your handling code here:
+        String notis = notificaciones_btn.getText();
+        java.util.ResourceBundle bundle = java.util.ResourceBundle.getBundle("idiomas/Bundle_es_ES");
+        
+        if (notis.compareTo("ON") == 0) {
+            notificaciones_btn.setText(bundle.getString("notificaciones_off")); // NOI18N
+        } else {
+            notificaciones_btn.setText(bundle.getString("notificaciones_on")); // NOI18N
+        }
+    }//GEN-LAST:event_notificaciones_btnMouseClicked
+
+    private void field_email_registro1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_field_email_registro1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_field_email_registro1ActionPerformed
+
+    private void boton_registrarse1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_boton_registrarse1MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_boton_registrarse1MouseClicked
+
     private void login_btn3MouseClicked(java.awt.event.MouseEvent evt) {                                                   
         inicio.setVisible(false);
         iniciar_sesion.setVisible(true);
@@ -2287,6 +2464,7 @@ public class Plantila extends javax.swing.JFrame {
     private javax.swing.JPanel boton_gestionar_cuentas;
     private javax.swing.JButton boton_gmail_login;
     private javax.swing.JButton boton_registrarse;
+    private javax.swing.JButton boton_registrarse1;
     private javax.swing.JPanel boton_tweetear;
     private javax.swing.JLabel bottom_img3;
     private javax.swing.JLabel campos_vacios_login;
@@ -2298,13 +2476,17 @@ public class Plantila extends javax.swing.JFrame {
     private javax.swing.JPanel cuenta_3;
     private javax.swing.JComboBox<String> elegir_cuenta;
     private javax.swing.JTextField field_email_registro;
+    private javax.swing.JTextField field_email_registro1;
     private javax.swing.JPasswordField field_password_login;
     private javax.swing.JPasswordField field_password_registro;
+    private javax.swing.JPasswordField field_password_registro1;
     private javax.swing.JTextField field_username_login;
     private javax.swing.JTextField field_username_registro;
+    private javax.swing.JTextField field_username_registro1;
     private javax.swing.JPanel iniciar_sesion;
     private javax.swing.JPanel inicio;
     private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton7;
     private javax.swing.JButton jButton8;
     private javax.swing.JLabel jLabel1;
@@ -2351,6 +2533,7 @@ public class Plantila extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel47;
     private javax.swing.JLabel jLabel48;
     private javax.swing.JLabel jLabel49;
+    private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel50;
     private javax.swing.JLabel jLabel51;
     private javax.swing.JLabel jLabel52;
@@ -2361,6 +2544,7 @@ public class Plantila extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel57;
     private javax.swing.JLabel jLabel58;
     private javax.swing.JLabel jLabel59;
+    private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel60;
     private javax.swing.JLabel jLabel61;
     private javax.swing.JLabel jLabel62;
@@ -2371,6 +2555,7 @@ public class Plantila extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel67;
     private javax.swing.JLabel jLabel68;
     private javax.swing.JLabel jLabel69;
+    private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel70;
     private javax.swing.JLabel jLabel71;
     private javax.swing.JLabel jLabel72;
@@ -2391,8 +2576,11 @@ public class Plantila extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
+    private javax.swing.JPanel jPanel5;
+    private javax.swing.JPanel jPanel6;
     private javax.swing.JPanel jPanel7;
     private javax.swing.JPanel jPanel8;
+    private javax.swing.JPanel jPanel9;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JSeparator jSeparator10;
@@ -2433,6 +2621,7 @@ public class Plantila extends javax.swing.JFrame {
     private javax.swing.JPanel subpanel_gestionar;
     private javax.swing.JLabel titulo_panel_configuracion;
     private javax.swing.JLabel titulo_panel_configuracion1;
+    private javax.swing.JLabel titulo_panel_configuracion2;
     private javax.swing.JLabel titulo_registro;
     private javax.swing.JPanel tweet_1;
     private javax.swing.JPanel tweet_2;
