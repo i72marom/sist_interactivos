@@ -131,6 +131,7 @@ public class Plantila extends javax.swing.JFrame {
         jLabel7 = new javax.swing.JLabel();
         boton_registrarse1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
+        jLabel77 = new javax.swing.JLabel();
         panel_gestionar = new javax.swing.JPanel();
         elegir_cuenta = new javax.swing.JComboBox<>();
         subpanel_gestionar = new javax.swing.JPanel();
@@ -295,9 +296,9 @@ public class Plantila extends javax.swing.JFrame {
 
         field_username_login.setFont(new java.awt.Font("SansSerif", 0, 18)); // NOI18N
         field_username_login.setBorder(null);
-        field_username_login.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                field_username_loginActionPerformed(evt);
+        field_username_login.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                field_username_loginKeyPressed(evt);
             }
         });
 
@@ -339,6 +340,11 @@ public class Plantila extends javax.swing.JFrame {
 
         field_password_login.setFont(new java.awt.Font("SansSerif", 0, 18)); // NOI18N
         field_password_login.setBorder(null);
+        field_password_login.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                field_password_loginKeyPressed(evt);
+            }
+        });
 
         jPanel10.setBackground(new java.awt.Color(49, 173, 144));
         jPanel10.setPreferredSize(new java.awt.Dimension(0, 2));
@@ -526,6 +532,11 @@ public class Plantila extends javax.swing.JFrame {
 
         field_username_registro.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
         field_username_registro.setBorder(null);
+        field_username_registro.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                field_username_registroKeyPressed(evt);
+            }
+        });
 
         field_email_registro.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
         field_email_registro.setBorder(null);
@@ -534,9 +545,19 @@ public class Plantila extends javax.swing.JFrame {
                 field_email_registroActionPerformed(evt);
             }
         });
+        field_email_registro.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                field_email_registroKeyPressed(evt);
+            }
+        });
 
         field_password_registro.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
         field_password_registro.setBorder(null);
+        field_password_registro.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                field_password_registroKeyPressed(evt);
+            }
+        });
 
         jLabel14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/media/icons/left-arrow.png"))); // NOI18N
         jLabel14.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -1202,6 +1223,13 @@ public class Plantila extends javax.swing.JFrame {
         jButton2.setForeground(new java.awt.Color(248, 248, 248));
         jButton2.setText(bundle.getString("eliminar_perfil")); // NOI18N
 
+        jLabel77.setIcon(new javax.swing.ImageIcon(getClass().getResource("/media/icons/left-arrow.png"))); // NOI18N
+        jLabel77.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel77MouseClicked(evt);
+            }
+        });
+
         javax.swing.GroupLayout panel_configuracionLayout = new javax.swing.GroupLayout(panel_configuracion);
         panel_configuracion.setLayout(panel_configuracionLayout);
         panel_configuracionLayout.setHorizontalGroup(
@@ -1230,6 +1258,10 @@ public class Plantila extends javax.swing.JFrame {
                 .addContainerGap(143, Short.MAX_VALUE))
             .addComponent(boton_registrarse1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panel_configuracionLayout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(jLabel77)
+                .addContainerGap())
         );
         panel_configuracionLayout.setVerticalGroup(
             panel_configuracionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1263,9 +1295,11 @@ public class Plantila extends javax.swing.JFrame {
                 .addComponent(jPanel9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(boton_registrarse1, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 100, Short.MAX_VALUE)
+                .addGap(18, 18, 18)
                 .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(33, 33, 33))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 71, Short.MAX_VALUE)
+                .addComponent(jLabel77)
+                .addContainerGap())
         );
 
         cardLayout_menuprincipal.add(panel_configuracion, "card5");
@@ -2107,10 +2141,6 @@ public class Plantila extends javax.swing.JFrame {
         
     }//GEN-LAST:event_field_email_registroActionPerformed
 
-    private void field_username_loginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_field_username_loginActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_field_username_loginActionPerformed
-
     private void jLabel14MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel14MouseClicked
         
         field_username_registro.setText("");
@@ -2353,34 +2383,12 @@ public class Plantila extends javax.swing.JFrame {
 
     private void jButton1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseClicked
         // TODO add your handling code here:
-        String login = field_username_login.getText();
-        String pass = field_password_login.getText();
-        if(login.isEmpty() || pass.isEmpty()) { campos_vacios_login.setVisible(true); }
-        else {
-            iniciar_sesion.setVisible(false);
-            menu_principal.setVisible(true);
-            campos_vacios_login.setVisible(false);
-        }
+        enter_login();
     }//GEN-LAST:event_jButton1MouseClicked
 
     private void boton_registrarseMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_boton_registrarseMouseClicked
         // TODO add your handling code here:
-        String login = field_username_registro.getText();
-        String pass = field_email_registro.getText();
-        String mail = field_password_registro.getText();
-        
-
-        if(login.isEmpty() || pass.isEmpty() || mail.isEmpty()) { campos_vacios_registro.setVisible(true); }
-        else {
-            field_username_registro.setText("");
-            field_email_registro.setText("");
-            field_password_registro.setText("");
-            
-            campos_vacios_login.setVisible(false);
-            registro.setVisible(false);
-            iniciar_sesion.setVisible(true);
-        }
-        
+        enter_registro();        
     }//GEN-LAST:event_boton_registrarseMouseClicked
 
     private void boton_configuracionMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_boton_configuracionMouseClicked
@@ -2409,6 +2417,74 @@ public class Plantila extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_boton_registrarse1MouseClicked
 
+    private void jLabel77MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel77MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jLabel77MouseClicked
+
+    private void field_username_loginKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_field_username_loginKeyPressed
+        // TODO add your handling code here:
+        if (evt.getKeyCode() == java.awt.event.KeyEvent.VK_ENTER) {
+            enter_login();
+        }
+    }//GEN-LAST:event_field_username_loginKeyPressed
+
+    private void field_password_loginKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_field_password_loginKeyPressed
+        // TODO add your handling code here:
+        if (evt.getKeyCode() == java.awt.event.KeyEvent.VK_ENTER) {
+            enter_login();
+        }
+    }//GEN-LAST:event_field_password_loginKeyPressed
+
+    private void field_username_registroKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_field_username_registroKeyPressed
+        // TODO add your handling code here:
+        if (evt.getKeyCode() == java.awt.event.KeyEvent.VK_ENTER) {
+            enter_registro();
+        }
+    }//GEN-LAST:event_field_username_registroKeyPressed
+
+    private void field_email_registroKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_field_email_registroKeyPressed
+        // TODO add your handling code here:
+        if (evt.getKeyCode() == java.awt.event.KeyEvent.VK_ENTER) {
+            enter_registro();
+        }
+    }//GEN-LAST:event_field_email_registroKeyPressed
+
+    private void field_password_registroKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_field_password_registroKeyPressed
+        // TODO add your handling code here:
+        if (evt.getKeyCode() == java.awt.event.KeyEvent.VK_ENTER) {
+            enter_registro();
+        }
+    }//GEN-LAST:event_field_password_registroKeyPressed
+
+    private void enter_login() {
+        String login = field_username_login.getText();
+        String pass = field_password_login.getText();
+        if(login.isEmpty() || pass.isEmpty()) { campos_vacios_login.setVisible(true); }
+        else {
+            iniciar_sesion.setVisible(false);
+            menu_principal.setVisible(true);
+            campos_vacios_login.setVisible(false);
+        }
+    }
+    
+    private void enter_registro() {
+        String login = field_username_registro.getText();
+        String pass = field_email_registro.getText();
+        String mail = field_password_registro.getText();
+        
+
+        if(login.isEmpty() || pass.isEmpty() || mail.isEmpty()) { campos_vacios_registro.setVisible(true); }
+        else {
+            field_username_registro.setText("");
+            field_email_registro.setText("");
+            field_password_registro.setText("");
+            
+            campos_vacios_login.setVisible(false);
+            registro.setVisible(false);
+            iniciar_sesion.setVisible(true);
+        }
+    }
+    
     private void login_btn3MouseClicked(java.awt.event.MouseEvent evt) {                                                   
         inicio.setVisible(false);
         iniciar_sesion.setVisible(true);
@@ -2563,6 +2639,7 @@ public class Plantila extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel74;
     private javax.swing.JLabel jLabel75;
     private javax.swing.JLabel jLabel76;
+    private javax.swing.JLabel jLabel77;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel10;
     private javax.swing.JPanel jPanel11;
